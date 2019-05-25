@@ -89,7 +89,7 @@
 <meta property="og:site_name" content="一个程序员的练功房">
 <meta property="og:description" content="ElasticSearch入门Elasticsearch是一个实时分布式搜索和分析引擎。它让你以前所未有的速度处理大数据成为可能。可用于全文搜索、结构化搜索、分析以及将这三者混合使用。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-05-25T12:45:11.341Z">
+<meta property="og:updated_time" content="2019-05-25T16:48:00.853Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="ElasticSearch入门">
 <meta name="twitter:description" content="ElasticSearch入门Elasticsearch是一个实时分布式搜索和分析引擎。它让你以前所未有的速度处理大数据成为可能。可用于全文搜索、结构化搜索、分析以及将这三者混合使用。">
@@ -464,13 +464,13 @@
 <hr>
 <p>Q3：Linux如何后台启动运行ElasticSearch和Kibana</p>
 <p>A3：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">./elasticsearch -d</span><br><span class="line">nohup ./kibana &amp;</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">./elasticsearch -d</span><br><span class="line">nohup ./kibana &amp;</span><br></pre></td></tr></table></figure>
 <hr>
 <h3 id="IK-Analyzer-分词器"><a href="#IK-Analyzer-分词器" class="headerlink" title="IK-Analyzer 分词器"></a>IK-Analyzer 分词器</h3><h4 id="下载与安装"><a href="#下载与安装" class="headerlink" title="下载与安装"></a>下载与安装</h4><p>Github地址：<a href="https://github.com/medcl/elasticsearch-analysis-ik" target="_blank" rel="noopener">https://github.com/medcl/elasticsearch-analysis-ik</a></p>
 <ul>
 <li>命令安装：在ElasticSearch目录下执行</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">./bin/elasticsearch-plugin install https://github.com/medcl/elasticsearch-analysis-ik/releases/download/v&lt;版本&gt;/elasticsearch-analysis-ik-&lt;版本&gt;.zip</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">./bin/elasticsearch-plugin install https://github.com/medcl/elasticsearch-analysis-ik/releases/download/v&lt;版本&gt;/elasticsearch-analysis-ik-&lt;版本&gt;.zip</span><br></pre></td></tr></table></figure>
 <blockquote>
 <p>Tip1：IK版本号要与ElasticSearch版本号一致。</p>
 <p>Tip2：集群环境需要在所有节点上安装IK-Analyzer插件</p>
